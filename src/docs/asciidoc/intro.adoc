@@ -1,0 +1,45 @@
+== Agenda
+
+* Introduction
+* Overview
+* Demo
+
+[%notitle]
+[.large-text]
+== Intro 1
+
+How long does it take to setup a modern web application?
+
+[NOTE.speaker]
+--
+Java, Gradle, Maven, Webpack, Angular, React, VueJS, Security, Caching viele Konfigurationen, vieles um Fehler zu machen
+
+In der Regel einfach zu lange.
+--
+
+[%notitle]
+[.large-text]
+=== Intro 2
+How long does it take to configure databases, security, api?
+
+[NOTE.speaker]
+--
+Java, Gradle, Maven, Webpack, Angular, React, VueJS, Security, Caching viele Konfigurationen, vieles um Fehler zu machen
+
+In der Regel einfach zu lange.
+--
+
+
+[%notitle]
+[.large-text]
+=== Intro 2
+How long does it take to go to production?
+
+[NOTE.speaker]
+--
+Monitoring
+The answer is: too long most of the times. 
+Java, Gradle, Maven, Webpack, Angular, React, VueJS, Security, Caching viele Konfigurationen, vieles um Fehler zu machen
+
+In der Regel einfach zu lange.
+--

@@ -1,0 +1,504 @@
+:icons: font
+:twitter-tag: @atomfrede || @xetys
+:conference-tag: #tngbtd
+:talk-tag: #jhipsterintro
+:revnumber: {project-version}
+:example-caption!:
+:source-highlighter: highlightjs
+:revealjs_width: "75%"
+:imagesdir: {docdir}/src/docs/asciidoc/images
+:sourcedir: {docdir}/src/main/java
+:customcss: css/custom.css
+:revealjs_history: true
+:revealjs_plugin_pdf: enabled
+:revealjs_theme: solarized
+:revealjs_controls: true
+:source-highlighter: highlightjs
+:highlightjs-theme: css/atom-one-light.css
+// :iconfont-cdn: https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css
+:iconfont-cdn: css/font-awesome.min.css
+:icons: font
+
+:linkattrs:
+
+= JHipster 🙌 👩🏽‍💻
+
+ifdef::ghpages[]
+image::{ghpagesurl}jhipster-logo.png[width=90%]
+endif::ghpages[]
+
+ifndef::ghpages[]
+image::jhipster-logo.png[width=90%]
+endif::ghpages[]
+
+Big Techday 2020
+
+include::{includedir}/footer.adoc[]
+include::{includedir}/click-mouse-navigation.adoc[]
+
+include::{includedir}/about-us.adoc[]
+
+== Greeetings, Hipsters
+
+ifdef::ghpages[]
+image:{ghpagesurl}hipsters.png[width=50%]
+endif::ghpages[]
+
+ifndef::ghpages[]
+image:hipsters.png[width=50%]
+endif::ghpages[]
+
+
+[NOTE.speaker]
+--
+It has been java hipsters, but we are more now, so stay tuned..
+--
+
+include::{includedir}/intro.adoc[]
+
+[.blue.background]
+[.white.text]
+== What is JHipster?
+
+ifdef::ghpages[]
+image::{ghpagesurl}what-is-jhipster-1.png[width=55%]
+endif::ghpages[]
+
+ifndef::ghpages[]
+image::what-is-jhipster-1.png[width=55%]
+endif::ghpages[]
+
+[.blue.background]
+[.white.text]
+=== What is JHipster?
+
+ifdef::ghpages[]
+image::{ghpagesurl}what-is-jhipster-2.png[width=55%]
+endif::ghpages[]
+
+ifndef::ghpages[]
+image::what-is-jhipster-2.png[width=55%]
+endif::ghpages[]
+
+[.blue.background]
+[.white.text]
+=== What is JHipster?
+
+[quote]
+TL,DR; JHipster is a development platform to quickly generate, develop, & deploy modern web applications & microservice architectures. 
+
+[NOTE.speaker]
+--
+All is open source at github our mailing list
+fun fact last week a collegue was looking for something spring boot related and ended up at our documentation
+with exactly what he wanted to know 
+--
+
+[.blue.background]
+[.white.text]
+=== JHipster in Numbers
+
+ifdef::ghpages[]
+image::{ghpagesurl}jhipster-conf.jpg[canvas,size=contain]
+endif::ghpages[]
+
+ifndef::ghpages[]
+image::jhipster-conf.jpg[canvas,size=contain]
+endif::ghpages[]
+
+* 15k+ Stars 
+* 35 Core Team Member
+* 536+ Contributors
+* 2 Books
+* 100000+ Installations
+* 2 Conferences
+
+[NOTE.speaker]
+--
+Lot of supporting companies, like google, okta, heroku, microsoft (recently), OCI.
+2 Java champions on the team
+companies both giving money, free credit or code (e.g. kubernetes support from google, azure spring cloud)
+--
+
+[.blue.background]
+[.white.text]
+=== Goals
+
+[quote]
+icon:quote-left[2x] A high-performance and robust server-side stack with excellent test coverage
+[quote.fragment]
+icon:quote-left[2x] A sleek, modern, mobile-first UI with Angular, React, or Vue + Bootstrap for CSS
+[quote.fragment]
+icon:quote-left[2x] A powerful workflow to build your application with Webpack and Maven or Gradle
+[quote.fragment]
+icon:quote-left[2x] A resilient microservice architecture with cloud native principles in mind
+[quote.fragment]
+icon:quote-left[2x] Infrastructure as code so you can quickly deploy to the ☁️
+
+[NOTE.speaker]
+--
+In particular the workflow is very important. We try to ease development and make the pain go away
+when it comes to e.g. configuration of webpack + maven 
+--
+
+[.blue.background]
+[.white.text]
+=== Policies
+
+[quote]
+icon:quote-left[2x] technologies used by JHipster have their default configuration used as much as possible
+
+[quote.fragment]
+icon:quote-left[2x] only add options when there is sufficient added-value in the generated code
+
+[quote.fragment]
+icon:quote-left[2x] for the Java code, follow the default Intellij IDEA coding style*
+
+[quote.fragment]
+icon:quote-left[2x] use strict versions for third-party libraries
+
+[NOTE.speaker]
+--
+For example, we use JPA, Spring, Angular and React the “usual way”, without some heavy configuration options and with their usual naming and coding conventions. We do this as:
+
+Each technology usually has a very good reason to have those defaults
+It’s much easier to understand how JHipster works if we don’t re-configure everything
+
+We might only change a default configuration if it produces some issue with the other technologies used by JHipster. For example, to have Spring Security and Angular working together, we had to change Spring Security’s default configuration.
+--
+
+[.blue.background]
+[.white.text]
+=== Formatting ...
+
+[.fragment]
+ifdef::ghpages[]
+image:{ghpagesurl}prettier.png[]
+endif::ghpages[]
+
+ifndef::ghpages[]
+image::prettier.png[]
+endif::ghpages[]
+
+[.fragment]
+* https://github.com/jhipster/prettier-java
+
+[NOTE.speaker]
+--
+Speaking about formatting...
+Wie ist das in der JS welt? macht man sich da noch Gedanken uber formatting?
+
+Well eher nicht, dank prettier. Bald auch in einem Java Projekt bei euch um die Ecke...
+
+Not yet final, but already useable, but of course opionated, but thats what prettier is doing
+--> No discussion about formatting anymore
+--
+
+[.light-blue.background]
+[.white.text]
+== Options
+
+[%notitle]
+[.light-blue.background]
+[.white.text]
+=== Server Side Options
+
+ifdef::ghpages[]
+image::{ghpagesurl}server-side.png[width=40%]
+endif::ghpages[]
+
+ifndef::ghpages[]
+image::server-side.png[width=40%]
+endif::ghpages[]
+
+[%notitle]
+[.light-blue.background]
+[.white.text]
+=== Client Side Options
+
+ifdef::ghpages[]
+image::{ghpagesurl}client-side.png[]
+endif::ghpages[]
+
+ifndef::ghpages[]
+image::client-side.png[]
+endif::ghpages[]
+
+[%notitle]
+[.light-blue.background]
+[.white.text]
+=== Deployment & CI/CD
+
+ifdef::ghpages[]
+image::{ghpagesurl}deployment-ci-cd.png[]
+endif::ghpages[]
+
+ifndef::ghpages[]
+image::deployment-ci-cd.png[]
+endif::ghpages[]
+
+[%notitle]
+[.white.text]
+== Live Demo
+
+ifdef::ghpages[]
+image::{ghpagesurl}code.webp[canvas,size=contain]
+
+Let's Code
+endif::ghpages[]
+
+ifndef::ghpages[]
+image::code.webp[canvas,size=contain]
+
+Let's Code
+endif::ghpages[]
+
+=== Gettin' Started
+
+----
+//Install node, java and git (optional)
+npm install -g generator-jhipster
+npm install -g generator-jhipster-vuejs
+
+jhipster --blueprints vuejs
+----
+
+[NOTE.speaker]
+--
+we recommend adoptopenjdk 11 and node lts version
+Latest version 6.8.0 (Gradle 6, Azure Spring Cloud, Neo4j)
+--
+
+=== Demo
+
+* Generate a basic library application
+* Short Walkthrough
+* Generate CRUD capabilities
+* Small changes to the code
+* Build with Gitlab CI, deploy to Heroku
+
+https://www.youtube.com/watch?v=uQqlO3IGpTU[Learn JHipster in ~15 minutes with Matt Raible]
+
+[%notitle]
+=== JDL
+
+ifdef::ghpages[]
+[.stretch]
+image::{ghpagesurl}jhipster-jdl.png[]
+endif::ghpages[]
+
+ifndef::ghpages[]
+[.stretch]
+image::jhipster-jdl.png[]
+endif::ghpages[]
+
+=== Side-by-Side Approach
+
+[source,java]
+----
+@SuppressWarnings("unused")
+@Repository
+public interface BorrowRepository extends JpaRepository<Borrow, Long> {
+
+}
+
+@SuppressWarnings("unused")
+@Repository
+public interface BorrowRepositoryCustom extends BorrowRepository {
+	
+}
+----
+
+[NOTE.speaker]
+--
+While it is generating, most people are interested in how to have custom code and
+business relevant code while keeping up2date with jhipster
+This helps to keep custom and generated code totally separated. Similar approach possible with angular (thanks to typescript)
+--
+
+=== Side-by-Side Approach
+
+
+[source,typescript]
+----
+import BookCopyService from "@/entities/book-copy/book-copy.service";
+
+export default class BookCopyServiceCustom extends BookCopyService {
+	
+}
+----
+
+https://www.slideshare.net/agoncal/custom-and-generated-code-side-by-side-with-jhipster[Custom and Generated Code Side by Side with JHipster] by https://twitter.com/agoncal[Antonio Goncalves]
+
+https://dev.to/antonioortizpola/separating-the-jhipster-layout-from-a-custom-ui-implementation-55i8[Separating the JHipster layout from a custom UI implementation]
+
+[NOTE.speaker]
+--
+Antonios Slides from first jhipster conf. The Devoxx Team and him has changed the whole devoxx conference 
+backend to jhipster based microservices and side by side approach in general with angular
+
+Blog series about how to have a custom ui without interfering with the generated code too much
+--
+
+=== Going to Production
+
+* Start with less
+* Don't touch the generated code
+* Keep JDL up to date
+* Use same DB in Dev & Prod
+** https://atomfrede.gitlab.io/2019/05/jhipster-with-testcontainers/[Integrate Testcontainers]
+* Use DTO & Services
+* Most likely you will add custom web api
+
+[%notitle]
+[.white.text]
+== Give me more
+
+ifdef::ghpages[]
+image::{ghpagesurl}please-give-me.jpg[canvas,size=contain]
+endif::ghpages[]
+
+ifndef::ghpages[]
+image::please-give-me.jpg[canvas,size=contain]
+endif::ghpages[]
+
+[NOTE.speaker]
+--
+Who knows start.spring.io? Well, we have something better...
+--
+
+[%notitle]
+[.white.text]
+== Give me more
+
+ifdef::ghpages[]
+image::{ghpagesurl}please-give-me.jpg[canvas,size=contain]
+endif::ghpages[]
+
+ifndef::ghpages[]
+image::please-give-me.jpg[canvas,size=contain]
+endif::ghpages[]
+
+[fragment]
+start.jhipster.tech
+
+[NOTE.speaker]
+--
+Who knows start.spring.io? Well, we have something better...
+--
+
+
+== Future Plans
+
+* Polyglot 
+** Kotlin icon:check-square-o[]
+** Node.js, .net icon:battery-3[]
+** Micronaut, Quarkus icon:battery-2[]
+* Spring Boot 2.2.x icon:check-square-o[]
+* Neo4j Support icon:battery-3[]
+* Modulith, Microfrontends, Fully Reactive
+
+[NOTE.speaker]
+--
+Kotlin quite simple, just replaces java with kotin
+node in beta stage .net in beta stage
+Quarkus/Micronaut in proof of concept phase working together with the micronaut team
+Boot 2.2 is in master, took a little longer due to spring cloud
+Worked together with michael simons from the neo team, waiting SDN/RX release to get a merge request
+Modulith for better structure, Reactive with reactor but I could imagine a vert.x blueprint, 
+Micro Frontents will be great if we get it right as it is hard to make it good
+
+Modulith -> Better package/module structure, instead by layer by domain
+--
+
+[.white.text]
+== More
+
+ifdef::ghpages[]
+image::{ghpagesurl}attention.gif[canvas,size=contain]
+endif::ghpages[]
+
+ifndef::ghpages[]
+image::attention.gif[canvas,size=contain]
+endif::ghpages[]
+
+* https://jhipster.tech[jhipster.tech]
+* https://github.com/jhipster[github.com/jhipster]
+* https://twitter.com/jhipster[twitter.com/jhipster]
+* https://stackoverflow.com/tags/jhipster/info[stackoverflow.com/tags/jhipster/info]
+* https://gitter.im/jhipster/generator-jhipster[gitter.im/jhipster/generator-jhipster]
+* http://wwww.jhipster-book.com[jhipster-book.com]
+* https://www.packtpub.com/web-development/full-stack-development-with-jhipster-second-edition[www.packtpub.com/web-development/full-stack-development-with-jhipster-second-edition]
+
+[NOTE.speaker]
+--
+Deepus book was just release in a second edition
+Matt Raible will update his minibook for upcoming release
+--
+
+=== Bug Bounties
+
+ifdef::ghpages[]
+image::{ghpagesurl}bounties.webp[width=25%]
+https://jhipster.tech/bug-bounties[jhipster.tech/bug-bounties]
+endif::ghpages[]
+
+ifndef::ghpages[]
+image::bounties.webp[width=25%]
+https://jhipster.tech/bug-bounties[jhipster.tech/bug-bounties]
+endif::ghpages[]
+
+[NOTE.speaker]
+--
+Via open collective, quite a nice budget and helps to be sustainable as we are fully open source. 
+So check the issue list and get some money by doing good
+--
+
+== Questions?
+
+ifdef::ghpages[]
+image::{ghpagesurl}questions.webp[]
+endif::ghpages[]
+
+ifndef::ghpages[]
+image::questions.webp[]
+endif::ghpages[]
+
+== Join Us
+
+ifdef::ghpages[]
+image::{ghpagesurl}wescale-logo.png[]
+endif::ghpages[]
+
+ifndef::ghpages[]
+image::wescale-logo.png[]
+endif::ghpages[]
+
+https://wescale.com/de/join-us/[wescale.com/de/join-us]
+
+[NOTE.speaker]
+--
+Come to Paderborn, its nice, much cheaper and we do cool stuff there too
+--
+
+== Use the force Luke
+
+ifdef::ghpages[]
+image::{ghpagesurl}rate.png[width=25%]
+endif::ghpages[]
+
+ifndef::ghpages[]
+image::rate.png[width=25%]
+endif::ghpages[]
+
+https://www.sigs-datacom.de/konferenzen/it-eventapp.html
+
+[NOTE.speaker]
+--
+Don't forget to rate the talk or come over, I will be here for a little while
+and get some stickers
+--
+
+
+
+

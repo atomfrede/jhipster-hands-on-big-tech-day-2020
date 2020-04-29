@@ -1,0 +1,34 @@
+== About us
+Frederik Hahne
+
+icon:twitter[] https://twitter.com/atomfrede[@atomfrede]
+
+icon:globe[] https://atomfrede.gitlab.io[atomfrede.gitlab.io]
+
+=== About me
+
+* https://www.jhipster.tech/team[JHipster Core Team] Member since 2015
+* https://www.jhipster.tech/team/#jhipster-streams[Gradle Stream Lead], Vue Maintainer
+* https://jug-pb.gitlab.io/[JUG Paderborn] Organizer
+* Software Developer at https://www.wescale.com/de/[wescale] in Paderborn 
+
+ifdef::ghpages[]
+image:{ghpagesurl}wescale-jug.png[width=25%]
+endif::ghpages[]
+
+ifndef::ghpages[]
+image:wescale-jug.png[width=25%]
+endif::ghpages[]
+
+[.white.text]
+=== Disclaimer
+
+ifdef::ghpages[]
+image::{ghpagesurl}noob.gif[canvas,size=contain]
+I am a Noob
+endif::ghpages[]
+
+ifndef::ghpages[]
+image::noob.gif[canvas,size=contain]
+I am a Noob
+endif::ghpages[]
