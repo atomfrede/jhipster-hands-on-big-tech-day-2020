@@ -1,7 +1,7 @@
 :icons: font
 :twitter-tag: @atomfrede || @theOnlyScrippi
 :conference-tag: #tngbtd
-:talk-tag: #jhipsterintro
+:talk-tag: #jhipster🙌👩🏽‍💻
 :revnumber: {project-version}
 :example-caption!:
 :source-highlighter: highlightjs
