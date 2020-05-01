@@ -1,0 +1,36 @@
+[%notitle]
+[.white.text]
+== Give me more
+
+ifdef::ghpages[]
+image::{ghpagesurl}please-give-me.jpg[canvas,size=contain]
+endif::ghpages[]
+
+ifndef::ghpages[]
+image::please-give-me.jpg[canvas,size=contain]
+endif::ghpages[]
+
+[NOTE.speaker]
+--
+Who knows start.spring.io? Well, we have something better...
+--
+
+[%notitle]
+[.white.text]
+== Give me more
+
+ifdef::ghpages[]
+image::{ghpagesurl}please-give-me.jpg[canvas,size=contain]
+endif::ghpages[]
+
+ifndef::ghpages[]
+image::please-give-me.jpg[canvas,size=contain]
+endif::ghpages[]
+
+[fragment]
+start.jhipster.tech
+
+[NOTE.speaker]
+--
+Who knows start.spring.io? Well, we have something better...
+--

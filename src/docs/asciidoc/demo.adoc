@@ -1,0 +1,38 @@
+=== Gettin' Started
+
+----
+//Install node, java and git (optional)
+npm install -g generator-jhipster
+npm install -g generator-jhipster-vuejs
+
+jhipster --blueprints vuejs
+----
+
+[NOTE.speaker]
+--
+we recommend adoptopenjdk 11 and node lts version
+Latest version 6.8.0 (Gradle 6, Azure Spring Cloud, Neo4j)
+--
+
+=== Demo
+
+* Generate a basic library application
+* Short Walkthrough
+* Generate CRUD capabilities
+* Small changes to the code
+* Build with Gitlab CI, deploy to Heroku
+
+https://www.youtube.com/watch?v=uQqlO3IGpTU[Learn JHipster in ~15 minutes with Matt Raible]
+
+[%notitle]
+=== JDL
+
+ifdef::ghpages[]
+[.stretch]
+image::{ghpagesurl}jhipster-jdl.png[]
+endif::ghpages[]
+
+ifndef::ghpages[]
+[.stretch]
+image::jhipster-jdl.png[]
+endif::ghpages[]

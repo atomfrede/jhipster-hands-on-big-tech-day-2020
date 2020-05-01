@@ -1,0 +1,57 @@
+=== Side-by-Side Approach
+
+[source,java]
+----
+@SuppressWarnings("unused")
+@Repository
+public interface BorrowRepository extends JpaRepository<Borrow, Long> {
+
+}
+
+@SuppressWarnings("unused")
+@Repository
+public interface BorrowRepositoryCustom extends BorrowRepository {
+	
+}
+----
+
+[NOTE.speaker]
+--
+While it is generating, most people are interested in how to have custom code and
+business relevant code while keeping up2date with jhipster
+This helps to keep custom and generated code totally separated. Similar approach possible with angular (thanks to typescript)
+--
+
+=== Side-by-Side Approach
+
+
+[source,typescript]
+----
+import BookCopyService from "@/entities/book-copy/book-copy.service";
+
+export default class BookCopyServiceCustom extends BookCopyService {
+	
+}
+----
+
+https://www.slideshare.net/agoncal/custom-and-generated-code-side-by-side-with-jhipster[Custom and Generated Code Side by Side with JHipster] by https://twitter.com/agoncal[Antonio Goncalves]
+
+https://dev.to/antonioortizpola/separating-the-jhipster-layout-from-a-custom-ui-implementation-55i8[Separating the JHipster layout from a custom UI implementation]
+
+[NOTE.speaker]
+--
+Antonios Slides from first jhipster conf. The Devoxx Team and him has changed the whole devoxx conference 
+backend to jhipster based microservices and side by side approach in general with angular
+
+Blog series about how to have a custom ui without interfering with the generated code too much
+--
+
+=== Going to Production
+
+* Start with less
+* Don't touch the generated code
+* Keep JDL up to date
+* Use same DB in Dev & Prod
+** https://atomfrede.gitlab.io/2019/05/jhipster-with-testcontainers/[Integrate Testcontainers]
+* Use DTO & Services
+* Most likely you will add custom web api

@@ -1,0 +1,214 @@
+== Greeetings, Hipsters
+
+ifdef::ghpages[]
+image:{ghpagesurl}hipsters.png[width=50%]
+endif::ghpages[]
+
+ifndef::ghpages[]
+image:hipsters.png[width=50%]
+endif::ghpages[]
+
+
+[NOTE.speaker]
+--
+It has been Java hipsters, but we are more now, so stay tuned..
+--
+
+include::{includedir}/intro.adoc[]
+
+[.blue.background]
+[.white.text]
+== What is JHipster?
+
+ifdef::ghpages[]
+image::{ghpagesurl}what-is-jhipster-1.png[width=55%]
+endif::ghpages[]
+
+ifndef::ghpages[]
+image::what-is-jhipster-1.png[width=55%]
+endif::ghpages[]
+
+[.blue.background]
+[.white.text]
+=== What is JHipster?
+
+ifdef::ghpages[]
+image::{ghpagesurl}what-is-jhipster-2.png[width=55%]
+endif::ghpages[]
+
+ifndef::ghpages[]
+image::what-is-jhipster-2.png[width=55%]
+endif::ghpages[]
+
+[.blue.background]
+[.white.text]
+=== What is JHipster?
+
+[quote]
+TL,DR; JHipster is a development platform to quickly generate, develop, & deploy modern web applications & microservice architectures. 
+
+[NOTE.speaker]
+--
+All is open source at github our mailing list
+fun fact last week a collegue was looking for something spring boot related and ended up at our documentation
+with exactly what he wanted to know 
+--
+
+[.blue.background]
+[.white.text]
+=== JHipster in Numbers
+
+ifdef::ghpages[]
+image::{ghpagesurl}jhipster-conf.jpg[canvas,size=contain]
+endif::ghpages[]
+
+ifndef::ghpages[]
+image::jhipster-conf.jpg[canvas,size=contain]
+endif::ghpages[]
+
+* 15k+ Stars 
+* 35 Core Team Member
+* 536+ Contributors
+* 2 Books
+* 100000+ Installations
+* 2 Conferences
+
+[NOTE.speaker]
+--
+Lot of supporting companies, like google, okta, heroku, microsoft (recently), OCI.
+2 Java champions on the team
+companies both giving money, free credit or code (e.g. kubernetes support from google, azure spring cloud)
+--
+
+[.blue.background]
+[.white.text]
+=== Goals
+
+[quote]
+icon:quote-left[2x] A high-performance and robust server-side stack with excellent test coverage
+[quote.fragment]
+icon:quote-left[2x] A sleek, modern, mobile-first UI with Angular, React, or Vue + Bootstrap for CSS
+[quote.fragment]
+icon:quote-left[2x] A powerful workflow to build your application with Webpack and Maven or Gradle
+[quote.fragment]
+icon:quote-left[2x] A resilient microservice architecture with cloud native principles in mind
+[quote.fragment]
+icon:quote-left[2x] Infrastructure as code so you can quickly deploy to the ☁️
+
+[NOTE.speaker]
+--
+In particular the workflow is very important. We try to ease development and make the pain go away
+when it comes to e.g. configuration of webpack + maven 
+--
+
+[.blue.background]
+[.white.text]
+=== Policies
+
+[quote]
+icon:quote-left[2x] technologies used by JHipster have their default configuration used as much as possible
+
+[quote.fragment]
+icon:quote-left[2x] only add options when there is sufficient added-value in the generated code
+
+[quote.fragment]
+icon:quote-left[2x] for the Java code, follow the default Intellij IDEA coding style*
+
+[quote.fragment]
+icon:quote-left[2x] use strict versions for third-party libraries
+
+[NOTE.speaker]
+--
+For example, we use JPA, Spring, Angular and React the “usual way”, without some heavy configuration options and with their usual naming and coding conventions. We do this as:
+
+Each technology usually has a very good reason to have those defaults
+It’s much easier to understand how JHipster works if we don’t re-configure everything
+
+We might only change a default configuration if it produces some issue with the other technologies used by JHipster. For example, to have Spring Security and Angular working together, we had to change Spring Security’s default configuration.
+--
+
+[.blue.background]
+[.white.text]
+=== Formatting ...
+
+[.fragment]
+ifdef::ghpages[]
+image:{ghpagesurl}prettier.png[]
+endif::ghpages[]
+
+ifndef::ghpages[]
+image::prettier.png[]
+endif::ghpages[]
+
+[.fragment]
+* https://github.com/jhipster/prettier-java
+
+[NOTE.speaker]
+--
+Speaking about formatting...
+Wie ist das in der JS welt? macht man sich da noch Gedanken uber formatting?
+
+Well eher nicht, dank prettier. Bald auch in einem Java Projekt bei euch um die Ecke...
+
+Not yet final, but already useable, but of course opionated, but thats what prettier is doing
+--> No discussion about formatting anymore
+--
+
+[.light-blue.background]
+[.white.text]
+== Options
+
+[%notitle]
+[.light-blue.background]
+[.white.text]
+=== Server Side Options
+
+ifdef::ghpages[]
+image::{ghpagesurl}server-side.png[width=40%]
+endif::ghpages[]
+
+ifndef::ghpages[]
+image::server-side.png[width=40%]
+endif::ghpages[]
+
+[%notitle]
+[.light-blue.background]
+[.white.text]
+=== Client Side Options
+
+ifdef::ghpages[]
+image::{ghpagesurl}client-side.png[]
+endif::ghpages[]
+
+ifndef::ghpages[]
+image::client-side.png[]
+endif::ghpages[]
+
+[%notitle]
+[.light-blue.background]
+[.white.text]
+=== Deployment & CI/CD
+
+ifdef::ghpages[]
+image::{ghpagesurl}deployment-ci-cd.png[]
+endif::ghpages[]
+
+ifndef::ghpages[]
+image::deployment-ci-cd.png[]
+endif::ghpages[]
+
+[%notitle]
+[.white.text]
+== Live Demo
+
+ifdef::ghpages[]
+image::{ghpagesurl}code.webp[canvas,size=contain]
+
+Let's Code
+endif::ghpages[]
+
+ifndef::ghpages[]
+image::code.webp[canvas,size=contain]
+
+Let's Code
+endif::ghpages[]
