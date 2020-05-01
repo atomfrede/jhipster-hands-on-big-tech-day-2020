@@ -1,5 +1,5 @@
 :icons: font
-:twitter-tag: @atomfrede || @xetys
+:twitter-tag: @atomfrede || @theOnlyScrippi
 :conference-tag: #tngbtd
 :talk-tag: #jhipsterintro
 :revnumber: {project-version}
