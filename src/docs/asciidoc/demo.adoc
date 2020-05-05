@@ -1,5 +1,6 @@
 === Gettin' Started
 
+[source]
 ----
 //Install node, java and git (optional)
 npm install -g generator-jhipster

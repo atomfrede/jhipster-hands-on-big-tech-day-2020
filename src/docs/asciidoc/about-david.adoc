@@ -1,3 +1,12 @@
 == About Us
 
 David Steiman
+
+icon:twitter[] https://twitter.com/theOnlyScrippi[@theOnlyScrippi]
+
+icon:globe[] http://stytex.de/[http://stytex.de/]
+
+=== About us
+
+* https://www.jhipster.tech/team[JHipster Core Team] Member since 
+* https://www.jhipster.tech/team/#jhipster-streams[UAA Stream Lead]

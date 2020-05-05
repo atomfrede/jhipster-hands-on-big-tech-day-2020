@@ -3,19 +3,16 @@
 * Polyglot 
 ** Kotlin icon:check-square-o[]
 ** Node.js, .net icon:battery-3[]
-** Micronaut, Quarkus icon:battery-2[]
-* Spring Boot 2.2.x icon:check-square-o[]
-* Neo4j Support icon:battery-3[]
-* Modulith, Microfrontends, Fully Reactive
+** Micronaut icon:battery-3[]
+** Quarkus icon:battery-1[]
+* Spring Boot 2.3.x icon:battery-2[]
+* Neo4j Support icon:check-square-o[]
+* Microfrontends
+* JHipster Control Center
 
 [NOTE.speaker]
 --
-Kotlin quite simple, just replaces java with kotin
-node in beta stage .net in beta stage
-Quarkus/Micronaut in proof of concept phase working together with the micronaut team
-Boot 2.2 is in master, took a little longer due to spring cloud
-Worked together with michael simons from the neo team, waiting SDN/RX release to get a merge request
-Modulith for better structure, Reactive with reactor but I could imagine a vert.x blueprint, 
+Generate less code -> make it easier for our users
 Micro Frontents will be great if we get it right as it is hard to make it good
 
 Modulith -> Better package/module structure, instead by layer by domain

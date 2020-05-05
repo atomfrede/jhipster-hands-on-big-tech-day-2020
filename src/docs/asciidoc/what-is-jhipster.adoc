@@ -11,7 +11,7 @@ endif::ghpages[]
 
 [NOTE.speaker]
 --
-It has been Java hipsters, but we are more now, so stay tuned..
+It has been Java hipsters, but we have more now, so stay tuned..
 --
 
 include::{includedir}/intro.adoc[]
@@ -28,30 +28,23 @@ ifndef::ghpages[]
 image::what-is-jhipster-1.png[width=55%]
 endif::ghpages[]
 
-[.blue.background]
-[.white.text]
-=== What is JHipster?
-
-ifdef::ghpages[]
-image::{ghpagesurl}what-is-jhipster-2.png[width=55%]
-endif::ghpages[]
-
-ifndef::ghpages[]
-image::what-is-jhipster-2.png[width=55%]
-endif::ghpages[]
+[NOTE.speaker]
+--
+We have Vue.js, which I would prefer, but we will show Angular this time
+--
 
 [.blue.background]
 [.white.text]
 === What is JHipster?
 
 [quote]
-TL,DR; JHipster is a development platform to quickly generate, develop, & deploy modern web applications & microservice architectures. 
+icon:quote-left[2x] TL,DR; JHipster is a development platform to quickly generate, develop, & deploy modern web applications & microservice architectures. 
 
 [NOTE.speaker]
 --
-All is open source at github our mailing list
-fun fact last week a collegue was looking for something spring boot related and ended up at our documentation
-with exactly what he wanted to know 
+We started as a very small code generator, as of now we have evolved to a platform which can be leveraged 
+for all phases of a project. Other OSS projects are coming to us as they would like to integrate 
+in order NOT to have a hello world example...
 --
 
 [.blue.background]
@@ -66,16 +59,16 @@ ifndef::ghpages[]
 image::jhipster-conf.jpg[canvas,size=contain]
 endif::ghpages[]
 
-* 15k+ Stars 
-* 35 Core Team Member
-* 536+ Contributors
+* 16k+ Stars 
+* 37 Core Team Member
+* 540+ Contributors
 * 2 Books
 * 100000+ Installations
 * 2 Conferences
 
 [NOTE.speaker]
 --
-Lot of supporting companies, like google, okta, heroku, microsoft (recently), OCI.
+Lot of supporting companies, like google, okta, heroku, microsoft (recently), OCI (grails, micronaut)
 2 Java champions on the team
 companies both giving money, free credit or code (e.g. kubernetes support from google, azure spring cloud)
 --
@@ -92,8 +85,6 @@ icon:quote-left[2x] A sleek, modern, mobile-first UI with Angular, React, or Vue
 icon:quote-left[2x] A powerful workflow to build your application with Webpack and Maven or Gradle
 [quote.fragment]
 icon:quote-left[2x] A resilient microservice architecture with cloud native principles in mind
-[quote.fragment]
-icon:quote-left[2x] Infrastructure as code so you can quickly deploy to the ☁️
 
 [NOTE.speaker]
 --
@@ -164,11 +155,11 @@ Not yet final, but already useable, but of course opionated, but thats what pret
 === Server Side Options
 
 ifdef::ghpages[]
-image::{ghpagesurl}server-side.png[width=40%]
+image::{ghpagesurl}server-side.png[width=50%]
 endif::ghpages[]
 
 ifndef::ghpages[]
-image::server-side.png[width=40%]
+image::server-side.png[width=50%]
 endif::ghpages[]
 
 [%notitle]

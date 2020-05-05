@@ -1,5 +1,12 @@
 === Side-by-Side Approach
 
+* How to handle generated code?
+* How to stay up-to-date with latest JHipster development?
+* Customize generated code to e.g. corporate identity?
+* Always need to add certain features? 
+
+=== Side-by-Side Approach
+
 [source,java]
 ----
 @SuppressWarnings("unused")
@@ -45,13 +52,3 @@ backend to jhipster based microservices and side by side approach in general wit
 
 Blog series about how to have a custom ui without interfering with the generated code too much
 --
-
-=== Going to Production
-
-* Start with less
-* Don't touch the generated code
-* Keep JDL up to date
-* Use same DB in Dev & Prod
-** https://atomfrede.gitlab.io/2019/05/jhipster-with-testcontainers/[Integrate Testcontainers]
-* Use DTO & Services
-* Most likely you will add custom web api
