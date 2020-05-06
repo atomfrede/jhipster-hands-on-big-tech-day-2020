@@ -8,5 +8,6 @@ icon:globe[] http://stytex.de/[http://stytex.de/]
 
 === About us
 
-* https://www.jhipster.tech/team[JHipster Core Team] Member since 
+* https://www.jhipster.tech/team[JHipster Core Team] Member since 2016
 * https://www.jhipster.tech/team/#jhipster-streams[UAA Stream Lead]
+* Microservice enthusiast
