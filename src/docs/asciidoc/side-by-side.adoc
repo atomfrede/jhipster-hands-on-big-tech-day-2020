@@ -52,3 +52,17 @@ backend to jhipster based microservices and side by side approach in general wit
 
 Blog series about how to have a custom ui without interfering with the generated code too much
 --
+
+=== Corporate Blueprinting
+
+* How long does it take to turn a JHipster application into customer design?
+* How long does it take to SBS certain parts over and over again?
+
+=== Corporate Blueprinting
+
+* Use blueprint system to change parts of generating process
+** Small template changes
+** Own busines services
+** Repeating parts
+* Upgrade blueprint with JHipster current release
+* Upgrade apps with one generator
